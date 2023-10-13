@@ -268,5 +268,32 @@
    * Initiate Pure Counter 
    */
   new PureCounter();
-
 })()
+  // Get references to the Buy Now buttons
+  const buyFreeButton = document.getElementById("buy-free");
+  const buyBusinessButton = document.getElementById("buy-business");
+  const buyCloudStartupButton = document.getElementById("buy-cloud-startup");
+  const buyAdvancedButton = document.getElementById("buy-advanced");
+
+  // Function to handle the Buy Now button click
+  function handleBuyNowClick(event) {
+    // Prevent the default behavior of the link (to prevent page navigation)
+    event.preventDefault();
+
+    // Add your transaction logic here
+    // For example, you can show a confirmation message or redirect to a payment page.
+    alert("pembelian segera di proses, harap tunggu");
+    alert('Transaction process initiated. Redirecting to payment page...');
+  }
+
+
+
+
+  // Add a click event listener to each Buy Now button
+  buyFreeButton.addEventListener("click", handleBuyNowClick);
+  buyBusinessButton.addEventListener("click", handleBuyNowClick);
+  buyCloudStartupButton.addEventListener("click", handleBuyNowClick);
+  buyAdvancedButton.addEventListener("click", handleBuyNowClick);
+
+
+
